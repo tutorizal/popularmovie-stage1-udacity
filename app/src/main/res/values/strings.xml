@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Popular Movie</string>
+    <string name="sort_by_pop">Sort by Popularity</string>
+    <string name="sort_by_toprated">Sort by Rating</string>
+    <string name="data_retrieval_error_msg">Error while retrieving data from Server</string>
+    <string name="user_review_txt">User Rating</string>
+</resources>

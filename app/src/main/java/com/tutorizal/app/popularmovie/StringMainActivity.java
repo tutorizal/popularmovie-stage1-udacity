@@ -60,8 +60,6 @@ public class StringMainActivity extends AppCompatActivity implements StringMovie
 
         mMovieAdapter = new StringMovieAdapter(this, getApplicationContext());
 
-        mRecyclerView.setAdapter(mMovieAdapter);
-
         loadMovieData();
     }
 
@@ -161,9 +159,11 @@ public class StringMainActivity extends AppCompatActivity implements StringMovie
             if(movieItems != null) {
                 showMovieDataView();
                 mMovieAdapter.setMovieData(movieItems);
+                mRecyclerView.setAdapter(mMovieAdapter);
             } else {
                 showErrorMessage();
             }
         }
     }
+
 }
